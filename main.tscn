@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://2wap0283yk0r"]
+[gd_scene load_steps=13 format=3 uid="uid://2wap0283yk0r"]
 
 [ext_resource type="Script" uid="uid://cc8n3086pvl18" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://ceuu150fmggvr" path="res://player.tscn" id="1_ig7tw"]
@@ -9,7 +9,11 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
 size = Vector3(60, 2, 60)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lquwl"]
+albedo_color = Color(0.3160158, 0.27250552, 0.5260362, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
+material = SubResource("StandardMaterial3D_lquwl")
 size = Vector3(60, 2, 60)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ig7tw"]
@@ -104,7 +108,6 @@ offset_left = 64.0
 offset_top = 46.0
 offset_right = 125.0
 offset_bottom = 69.0
-theme_override_colors/font_color = Color(0.15677321, 0.28482094, 0.40423283, 1)
 text = "Score: 0"
 script = ExtResource("5_7mycd")
 
